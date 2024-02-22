@@ -1,5 +1,7 @@
 
 ***CodeSpace24: Ready for lift-off (April/May '24)***
+Sandor's digital playground
+
 Creative designer & Web3 enthusiast seeking opportunities. I bring:
 
 - Eye-catching design skills (print, graphic, UI/UX, video editing)
