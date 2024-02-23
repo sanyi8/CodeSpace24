@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RPS</title>
+    <style>
+     body {
+        background-color: black;
+        color: aquamarine;
+        justify-content: center;
+     }
+
+     #user-option, #computer-option, #result {
+        color: salmon;
+     }
+        
+ 
+      .options {
+        display: flex;
+        justify-content: center;
+        margin: 2rem;
+        color: salmon;
+
+      }
+    </style>
+  </head>
+  <br>
+<!-- Image link -->
+<a href="https://c.tenor.com/-iop9obK0IwAAAAC/i-want-to-play-a-game-play-time.gif" target="_blank" rel="noopener noreferrer">
+    <img src="https://c.tenor.com/-iop9obK0IwAAAAC/i-want-to-play-a-game-play-time.gif" alt="Play Time" />
+  </a>
+  
+<!--buttons use IDs-->
+<div class="options">
+  <button id="rock">Rock</button>
+  <button id="paper">Paper</button>
+  <button id="scissors">Scissors</button>
+</div>
+<br>
+<!--Display Info-->
+
+<h2>Your Option: <span id="user-option"></span></h2>
+<h2>Computer Option: <span id="computer-option"></span></h2>
+<h2>Result: <span id="result"></span></h2>
+
+<script>
+  // assign IDs call elements by its IDs
+  // create const for reuse as Buttons
+  const rockBtn = document.getElementById("rock");
+  const paperBtn = document.getElementById("paper");
+  const scissorsBtn = document.getElementById("scissors");
+
+  // get the spans
+  const userOptionSpan = document.getElementById("user-option");
+  const computerOptionSpan = document.getElementById("computer-option");
+  const resultSpan = document.getElementById("result");
+
+  // 1 add clickEvents to the buttons
+  // 2 listener look for events or click, and a callback function*
+  // 5 defines the options into an array
+  // 6 NOTE: change options[i]
+  const options = ["Rock", "Paper", "Scissors"];
+
+  rockBtn.addEventListener("click", function() {
+    //* 3 what happens userOption displays btn value / use innerHTML
+    // 3    userOptionSpan.innerHTML = "Rock";
+    // 6    change IDs to options
+
+    // when writing the playGame(userOption) function we remove the following code with the one after that
+    // userOptionSpan.innerHTML = options[0];
+    playGame(options[0]);
+  })
+
+  // 4 copy the belows from rockBtn for each Btn
+  paperBtn.addEventListener("click", function() {
+    // userOptionSpan.innerHTML = options[1];
+    playGame(options[1]);
+  })
+
+  scissorsBtn.addEventListener("click", function() {
+    // userOptionSpan.innerHTML = options[2];
+    playGame(options[2]);
+  })
+
+  // Play the game function: get a random choice for the computer
+  function playGame(userOption) {
+    /*  MY WAY to generate the random number
+    // generate a random number between 0 and 1
+    const randomDecimal = Math.random();
+    // multiply by 3 to get a number 0-3
+    const multipliedDecimal = randomDecimal * 3;
+    // round to nearest integer for 0, 1, or 2
+    const integer = Math.floor(multipliedDecimal);
+
+    return integer;
+    */
+
+    // get the computer option
+    const computerOption = options[Math.floor(Math.random() * options.length)];
+
+    // set user option
+    userOptionSpan.innerHTML = userOption;
+
+    // set computer option
+    computerOptionSpan.innerHTML = computerOption;
+
+    // Compare the options
+    // A draw
+    if (userOption === computerOption) {
+      resultSpan.innerHTML = "It's a tie!"
+    }
+
+    // We compare all Player Wins situation
+    // Rock Vs Scissors
+    else if (userOption === "Rock" && computerOption === "Scissors") {
+      resultSpan.innerHTML = "You Win!";
+    }
+
+    // Paper vs Rock
+    else if (userOption === "Paper" && computerOption === "Rock") {
+      resultSpan.innerHTML = "You Win!";
+    }
+
+    // Scissors vs Paper
+    else if (userOption === "Scissors" && computerOption === "Paper") {
+      resultSpan.innerHTML = "You Win!";
+    }
+    // Otherwise
+    else {
+      resultSpan.innerHTML = "You Lose!"
+    }
+
+    // NOW we go back to the <span> area and clear the text
+  }
+  // use function to get computer's choice
+</script>
+
+
+  </body>
+</html>
