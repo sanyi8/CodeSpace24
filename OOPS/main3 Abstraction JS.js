@@ -4,7 +4,7 @@
 class BankAccount {
   // class constructor
   constructor(balance) {
-    // Protect the constructor for being instantiated use IF
+    // PROTECTION - the constructor for being instantiated use IF STATEMENT
     if (this.constructor === BankAccount) {
       // throw an error if the constructor is called direcly from the object
       throw new TypeError("Cannot construct Abstract instance directly");
@@ -16,14 +16,14 @@ class BankAccount {
   }
 
   //Abstract methods
-  //Deposit
+    //Deposit
 
   deposit(amount) {
     // throw an error if the abstrat method is called direcly from the object
     throw new TypeError("Cannot construct Abstract instance directly");
   }
 
-  //withdraw
+    //withdraw
   withdraw(amount) {}
 }
 
