@@ -27,20 +27,27 @@
 
 // Write the class User and add the properties.
 class User {
-    constructor(firstName, lastName) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-    }
-// Add the method that says hello.
-    greet() {
-        console.log("Hello, " + this.firstName + " " + this.lastName);
+    firstName = "";
+    lastName = "";
+
+    // hello method
+    hello() {
+        return("Hello " + this.firstName + " " + this.lastName);
     }
 }
-// Create the first instance, and call it user1. Use the new keyword to create an object from the class.
-const user1 = new User("John", "Doe");
-const user2 = new User("Jane", "Doe");
+
+//Create user objects from the class
+const user1 = new User();
+const user2 = new User();
+
+//set names
+user1.firstName = "John";
+user1.lastName = "Doe";
+user2.firstName = "Jane";
+user2.lastName = "Doe";
+
+//Print Hello with names
+console.log(user1.hello());
+console.log(user2.hello());
 
 
-// Greeting users
-user1.greet();
-user2.greet();
