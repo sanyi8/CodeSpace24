@@ -42,11 +42,20 @@ class User {
   // Call hello() method
   console.log(user.hello());
   // Show here firstName and lastName (get methods) getting access to the method
-  // _firstName _ means is a private variable
+  // _firstName means is a private 
   console.log(`My name is ${user.firstName} ${user.lastName}`);
 
   // Set a new first and last name( using the set method)
   // we calling here
   user.firstName = "Jane";
   user.lastName = "Doe";
+  
+
+  // do the same for user2
+const user2 = new User("Jane", "Doe");
+
+// Get user2 first and last name and say
+console.log(user2.hello());
+console.log(`My name is ${user2.firstName} ${user2.lastName}`);
+
 

@@ -37,7 +37,7 @@ class User {
 
   //hello method
   hello() {
-    console.log(`hello, ${this.firstName} ${this.firstName}`);
+    console.log(`hello, ${this.firstName} ${this.lastName}`);
   }
 }
 
