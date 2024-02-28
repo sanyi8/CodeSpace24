@@ -1,5 +1,5 @@
 describe('Computing course page test', () =>{
-    it('Visit Edinburgh college website and close cookies '), () =>
+    it ('Visit Edinburgh college website and close cookies '), () => {
 
     // visit the url
     cy.visit('https://www.edinburghcollege.ac.uk/')
@@ -18,6 +18,6 @@ describe('Computing course page test', () =>{
     // check if we ar in the computing coursre page
     // Assertion: make sure the current URL is the Computing course page
 
-
+    }
 
 })
