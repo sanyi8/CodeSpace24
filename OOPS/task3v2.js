@@ -14,12 +14,12 @@
 // 3. Create an object admin out of the class Admin:
 // § Set its name to "Balthazar" and say hello to the user.
 
-//class with properties
+//user class
 class User {
   //class constructor // EMPTY Constructor
   constructor() {
     //initialise the userName
-    this._userName = ""; //initialise EMPTY
+    this._userName = ""; //initialise EMPTY string
   }
 
   // set method
@@ -44,8 +44,14 @@ class Admin extends User {
 // create an Admin instance (object)
 const admin = new Admin();
 
+// Show info to the user
+console.log(admin.sayHello());
+
 // Set the username to ''
 admin.userName = "Balthazar";
+// Show info to the user
+console.log(admin.sayHello());
 
+admin.userName = "John";
 // Show info to the user
 console.log(admin.sayHello());
