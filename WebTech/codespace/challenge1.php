@@ -8,4 +8,5 @@ $height = 5;
 $area = $width * $height;
 //calculate area
 echo "Area calculation based on width: $width m  and height: $height m is Area: $area ㎡"
+
 ?>
