@@ -2,7 +2,7 @@
 
 //Age Calculator
 
-$age = 25;
+$age = 43;
 $days = $age * 365;
 $hours = $days * 24;
 $mins = $hours * 60;
