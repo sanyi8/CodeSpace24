@@ -16,7 +16,7 @@
 
 $summer = "July-Aug";
 $winter = "Jan-Feb";
-$temperature = array("summer_low" => 11,"summer_low" => 19,"winter_low" =>1 , "winter_high" => 7);
+$temperature = array("summer_low" => 11,"summer_high" => 19,"winter_low" => 1 , "winter_high" => 7);
 
 echo "<table class=\"table table-condensed\">
 
