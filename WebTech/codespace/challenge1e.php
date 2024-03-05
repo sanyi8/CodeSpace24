@@ -21,13 +21,13 @@ $temperature = array("summer_low" => 11,"summer_low" => 19,"winter_low" =>1 , "w
 echo "<table class=\"table table-condensed\">
 
 <tr>
-<h1>Average Temperature in Edinburgh</h1>
+    <h1>Average Temperature in Edinburgh</h1>
 </tr>
 
 <tr>
-<th>Monthly</th>
-<th>High</th>
-<th>Low</th>
+    <th>Monthly</th>
+    <th>High</th>
+    <th>Low</th>
 </tr>
 
 <tr>
@@ -37,7 +37,7 @@ echo "<table class=\"table table-condensed\">
 </tr>
 
 <tr>
-<th>"$winter"</th>
+<th>$winter</th>
     <th>" . $temperature['winter_high'] . " ℃</th>
     <th>" . $temperature['winter_low'] . " ℃</th>
 </tr>
