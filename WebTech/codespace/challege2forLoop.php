@@ -34,7 +34,6 @@
         for($count = 1; $count<=10; $count++){
             echo($num . "x". $count ."=". $num * $count);
             echo("<br>");
-
         }
         ?>
         </div>
