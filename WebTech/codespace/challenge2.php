@@ -14,15 +14,20 @@
 
 https://www.w3schools.com/php/func_string_str_replace.asp -->
 
-
 <?php
     // 3. put everything into the fuction which will do the magic
     function replaceVowelsWithX($str) {
         // 1. array with the possible vowels in both format
         $vowels = array('a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U');
 
-        // 2. use the str_replace() Function   https://www.w3schools.com/php/func_string_str_replace.asp
-        echo str_replace($vowels,"x", $str);
+        // 2. return the str_replace() Function   https://www.w3schools.com/php/func_string_str_replace.asp
+        return str_replace($vowels,"x", $str);
 
     }
+
+    $input = "Hello World";
+    $output = replaceVowelsWithX($input);
+
+    echo $output;
+
 ?>
