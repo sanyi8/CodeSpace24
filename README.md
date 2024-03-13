@@ -1,6 +1,6 @@
 
 ***CodeSpace24: Ready for lift-off (April/May '24)***
-Sandor's digital playground
+Welcome on Sandor's digital playground
 
 Creative designer & Web3 enthusiast seeking opportunities. I bring:
 
