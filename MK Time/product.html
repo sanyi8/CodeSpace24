@@ -1,199 +1,162 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Landing Page</title>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Product</title>
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="stylesheet" href="slider_1-main/style.css">
-
-
-</head>
-
-<body>
-
-<!-- Navbar -->
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-  <div class="container-fluid">
-    <!-- Navbar Brand (Logo Only) -->
-    <a class="navbar-brand col-xl-1 col-lg-2 col-3" href="#">
-      <img src="images/MK LOGO WL OK.png" alt="mktime logo" class="img-fluid"/>
-    </a>
-
-    <!-- Navbar Toggler Button -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- Navbar Navigation Links -->
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav mr-auto">
-        <!-- Dropdown -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown link
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>    
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark text-uppercase">
+        <div class="container-fluid d-flex justify-content-centter">
+          <!-- Navbar Brand (Logo Only) -->
+          <a class="navbar-brand col-xl-1 col-lg-2 col-3" href="#">
+            <img
+              src="images/MK LOGO WL OK.png"
+              alt="mktime logo"
+              class="img-fluid"
+            />
           </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
 
-        <!-- Regular Navbar Links -->
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">Our Brand</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact Us</a>
-        </li>
-      </ul>
+          <!-- Navbar Toggler Button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-      <!-- Sign In and Register Buttons are Navbar inline elements! -->
-      <span class="navbar-text ms-auto">
-        <a class="nav-link d-inline m-3" href="#">Sign In</a>
-        <a class="nav-link d-inline m-3" href="#">Register</a>
-      </span>
+          <!-- Navbar Navigation Links -->
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mr-auto">
+
+              <!-- Dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Our Collection
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">Ladies Collection</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Gents Collection</a>
+                  </li>
+
+                  <!-- Dividing line -->
+                  <li><div class="dropdown-divider"></div></li>
+
+                  <li>
+                    <a class="dropdown-item text-danger" href="#">Clearance</a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Regular Navbar Links -->
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Our Brand</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+
+            <!-- Sign In and Register Buttons are Navbar inline elements! -->
+            <span class="navbar-text ms-auto">
+              <a class="nav-link d-inline m-3" href="#">Sign In</a>
+              <a class="nav-link d-inline m-3" href="#">Register</a>
+            </span>
+          </div>
+        </div>
+      </nav>
+
+      <!-- MK TIME Heading -->
+      <div class="text-center">
+        <h1 class="text-uppercase">PRODUCTS</h1>
+      </div>
+
+      <p class="text-center italic">
+        This is a fictional website and is used for educational illustration
+        purposes only.
+      </p>
+
+      <!-- PRODUCT Cards Section USE GRID-->
+<div class="container-fluid d-flex justify-content-center">
+      <div class="row mt-5">
+        
+        <div class="col-sm-6 col-md-4">
+          <div class="card mb-4 shadow" style="width: 18rem">
+            <img
+              src="/MK Time/images/watches/watch-AIfbUyzhKz0-unsplash.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Watch</h5>
+              <p class="card-text">Quality and style</p>
+              <a href="#" class="btn btn-primary">Buy</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+            <div class="card mb-4 shadow px-0" style="width: 18rem">
+            <img
+              src="/MK Time/images/watches/watch-NM-unsplash.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Watch</h5>
+              <p class="card-text">Quality and style</p>
+              <a href="#" class="btn btn-primary">Buy</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+            <div class="card mb-4 shadow" style="width: 18rem">
+            <img
+              src="/MK Time/images/watches/watch-kraan-VRERJ5Mjp4c-unsplash.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Watch</h5>
+              <p class="card-text">Quality and style</p>
+              <a href="#" class="btn btn-primary">Buy</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
-  </div>
-</nav>
-
-
-
-
-<!-- carousel -->
-<div class="carousel">
-  <!-- list item -->
-  <div class="list">
-      <div class="item">
-          <img src="images/watches/watch-AIfbUyzhKz0-unsplash.jpg" alt="dasfs" class="img-fluid">
-          <div class="content">
-              <div class="author">Sandor</div>
-              <div class="title">DESIGN SLIDER</div>
-              <div class="topic">ANIMAL</div>
-              <div class="des">
-                  <!-- lorem 50 -->
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
-              </div>
-              <div class="buttons">
-                  <button>SEE MORE</button>
-                  <button>SUBSCRIBE</button>
-              </div>
-          </div>
-      </div>
-      <div class="item">
-          <img src="images/watches/watch--bhat-lz6z9GZu8hk-unsplash.jpg" alt="dsafs" class="img-fluid">
-          <div class="content">
-              <div class="author">LUNDEV</div>
-              <div class="title">DESIGN SLIDER</div>
-              <div class="topic">ANIMAL</div>
-              <div class="des">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
-              </div>
-              <div class="buttons">
-                  <button>SEE MORE</button>
-                  <button>SUBSCRIBE</button>
-              </div>
-          </div>
-      </div>
-      <div class="item">
-          <img src="images/watches/watch-kraan-VRERJ5Mjp4c-unsplash.jpg" alt="dsafs" class="img-fluid">
-          <div class="content">
-              <div class="author">LUNDEV</div>
-              <div class="title">DESIGN SLIDER</div>
-              <div class="topic">ANIMAL</div>
-              <div class="des">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
-              </div>
-              <div class="buttons">
-                  <button>SEE MORE</button>
-                  <button>SUBSCRIBE</button>
-              </div>
-          </div>
-      </div>
-      <div class="item">
-          <img src="images/watches/watch-GZ1LcBPFs0-unsplash.jpg" alt="dsafs" class="img-fluid">
-          <div class="content">
-              <div class="author">LUNDEV</div>
-              <div class="title">DESIGN SLIDER</div>
-              <div class="topic">ANIMAL</div>
-              <div class="des">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
-              </div>
-              <div class="buttons">
-                  <button>SEE MORE</button>
-                  <button>SUBSCRIBE</button>
-              </div>
-          </div>
-      </div>
-  </div>
-
-  <!-- list thumnail -->
-  <div class="thumbnail">
-      <div class="item">
-          <img src="images/watches/watch-AIfbUyzhKz0-unsplash.jpg" alt="dsafs" class="img-fluid">
-          <div class="content">
-              <div class="title">
-                  Name Slider
-              </div>
-              <div class="description">
-                  Description
-              </div>
-          </div>
-      </div>
-      <div class="item">
-          <img src="images/watches/watch-OA0I1ui8o-unsplash.jpg" alt="dsafs" class="img-fluid">
-          <div class="content">
-              <div class="title">
-                  Name Slider
-              </div>
-              <div class="description" alt="dsafs">
-                  Description
-              </div>
-          </div>
-      </div>
-      <div class="item">
-          <img src="images/watches/watch-huRn8ECqADI-unsplash.jpg" alt="dmnsaoi" class="img-fluid">
-          <div class="content">
-              <div class="title">
-                  Name Slider
-              </div>
-              <div class="description">
-                  Description
-              </div>
-          </div>
-      </div>
-      <div class="item">
-          <img src="images/watches/watch-2V36G17IbQ-unsplash.jpg" alt="dusai" class="img-fluid">
-          <div class="content">
-              <div class="title">
-                  Name Slider
-              </div>
-              <div class="description">
-                  Description
-              </div>
-          </div>
-      </div>
-  </div>
-  <!-- next prev -->
-
-  <div class="arrows">
-      <button id="prev">-</button>
-      <button id="next">+</button>
-  </div>
-  <!-- time running -->
-  <div class="time"></div>
-</div>
-
-<script src="slider_1-main/app.js"></script>
 </div>
 </div>
-</div>
-<!-- Bootstrap JS and Popper.js -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
-</body>
+    <!-- Bootstrap JS and Popper.js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
