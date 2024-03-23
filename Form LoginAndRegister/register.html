@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Register Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="bg-success bg-opacity-10">
+    <div class="container d-flex justify-content-center p-5">
+        <div class="row h-200 w-75">
+            <form class="rounded-3 bg-success bg-opacity-25 shadow">
+                <h1 class="text-capitalize p-2">Register Form</h1>
+                <div class="mb-3">
+
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <span class="badge text-bg-danger bg-opacity-100">Required</span>
+                    <input type="email" class="form-control border-3 border-danger border-opacity-50"
+                        id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="Select" class="form-label" required>How old are you?</label>
+                    <select id="Select" class="form-select" required>
+
+                        <option value="" disabled selected>Select</option>
+                        <option value="Too Young">Too Young</option>
+                        <option value="Too Old">Too Old</option>
+                        <option value="Too Good">Too Good</option>
+
+                    </select>
+
+                </div>
+
+                <div class="password-strength m-4">
+                    <label for="exampleInputPassword1" class="form-label bg-opacity-100">Password </label>
+                    <span class="badge text-bg-danger bg-opacity-100">Required</span>
+                    <input type="password" class="form-control" id="exampleInputPassword1" required>
+
+                    <div class="password-strength">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0"
+                                aria-valuemin="0" aria-valuemax="100">
+                                <span class="password-label">Weak</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="mb-3 form-check m-5">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Newsletters Please</label>
+                </div>
+
+                <div class="form-check form-switch m-5">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Accepted T&C's</label>
+                </div>
+
+                <div class="submitButton d-flex align-items-end flex-column mb-3 m-4">
+                    <button type="submit" class="btn btn-success bg-opacity-50 m-4 shadow">Submit</button>
+                </div>
+                <p class="text-center p-2">Already have an account? <a href="login.html"
+                        class="link-success">Switch to Login</a></p>
+            </form>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+
+/* Add some styling for the progress bar */
+.progress {
+    height: 20px;
+    margin-top: 10px;
+    
+}
+
+/* Style for different password strength levels */
+.password-weak .progress-bar {
+    background-color: #ff6363;
+    /* Red color for weak */
+}
+
+.password-medium .progress-bar {
+    background-color: #ffcf58;
+    /* Yellow color for medium */
+}
+
+.password-strong .progress-bar {
+    background-color: #6bff6f;
+    /* Green color for strong */
+}
