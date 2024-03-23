@@ -1,7 +1,7 @@
 <?php # DISPLAY SHOPPING CART PAGE.
 
 # Set page title and display header section.
-include ('include/session-cart.php');
+include ('session-cart.php');
 
 # Check if form has been submitted for update.
 if ( $_SERVER['REQUEST_METHOD'] == 'POST' )
@@ -83,6 +83,6 @@ else
 
 
 # Display footer section.
-include ( 'include/footer.html' ) ;
+include ( 'footer.html' ) ;
 
 ?>

@@ -1,5 +1,5 @@
 <?php 
-include ( 'include/head.php' ) ;
+include ( 'head.php' ) ;
 # Display any error messages if present.
 if ( isset( $errors ) && !empty( $errors ) )
 {

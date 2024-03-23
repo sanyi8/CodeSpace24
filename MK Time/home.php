@@ -1,6 +1,6 @@
 <?php
 	#Read session start file.
-	include ('include/session-cart.php');
+	include ('session-cart.php');
 
 	# Open database connection.
 	require ( 'connect_db.php' );
@@ -38,7 +38,7 @@
 	# Or display message.
 	else { echo '<p>There are currently no items in the table to display.</p>
 	' ; }
-	include ('include/footer.html');
+	include ('footer.html');
 ?>	
 	
 	

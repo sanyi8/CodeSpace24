@@ -1,5 +1,5 @@
  <?php # DISPLAY COMPLETE REGISTRATION PAGE.
-include ( 'include/heading1.html' ) ;
+include ( 'heading1.html' ) ;
 if ( $_SERVER[ 'REQUEST_METHOD' ] == 'POST' )
 {
   # Connect to the database.
