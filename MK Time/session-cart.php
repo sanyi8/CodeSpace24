@@ -1,9 +1,9 @@
 <?php
 # Open database connection.
-  require ('../connect_db.php');
+  require ('connect_db.php');
 
 // TEST DATABASE
-$result = mysqli_query($link, "SLEECT * FROM product LIMIT 10");
+$result = mysqli_query($link, "SELECT * FROM product LIMIT 10");
 if ($result) {
     while ($row = mysqli_fetch_assoc($result)) {
         print_r($row);

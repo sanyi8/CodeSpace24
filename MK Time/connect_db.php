@@ -7,7 +7,7 @@ define('DB_PASS', ''); //password
 define('DB_NAME', 'mktime');
 
 # Create a new database connection
-$link = mysqli_connect(DB_HOST, DB_USER, DB_PASS, 'mktime')
+$link = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME)
 
 # Check for errors
 if (!$link) {

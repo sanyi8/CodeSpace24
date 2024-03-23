@@ -1,3 +1,7 @@
+<?php
+require_once 'connect_db.php';
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -15,7 +19,7 @@
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark text-uppercase">
   <div class="container-fluid">
     <!-- Navbar Brand (Logo Only) -->
-    <a class="navbar-brand col-xl-1 col-lg-2 col-3" href="#">
+    <a class="navbar-brand col-xl-1 col-lg-2 col-3" href="/MK Time/index.html">
       <img src="images/MK LOGO WL OK.png" alt="mktime logo" class="img-fluid"/>
     </a>
 
@@ -29,23 +33,23 @@
       <ul class="navbar-nav mr-auto">
         <!-- Dropdown -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="/MK Time/product.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Our Collection
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Ladies Collection</a></li>
-            <li><a class="dropdown-item" href="#">Gents Collection</a></li>
+            <li><a class="dropdown-item" href="/MK Time/product.html">Ladies Collection</a></li>
+            <li><a class="dropdown-item" href="/MK Time/product.html">Gents Collection</a></li>
 
             <!-- Dividing line -->
             <li><div class="dropdown-divider"></div></li>
 
-            <li><a class="dropdown-item text-danger" href="#">Clearance</a></li>
+            <li><a class="dropdown-item text-danger" href="/MK Time/product.html">Clearance</a></li>
           </ul>
         </li>
 
         <!-- Regular Navbar Links -->
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">Our Brand</a>
+          <a class="nav-link" aria-current="page" href="/MK Time/product.html">Our Brand</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Contact Us</a>
@@ -54,8 +58,8 @@
 
       <!-- Sign In and Register Buttons are Navbar inline elements! -->
       <span class="navbar-text ms-auto">
-        <a class="nav-link d-inline m-3" href="#">Sign In</a>
-        <a class="nav-link d-inline m-3" href="#">Register</a>
+        <a class="nav-link d-inline m-3" href="/MK Time/login.php">Sign In</a>
+        <a class="nav-link d-inline m-3" href="/MK Time/login_tools.php">Register</a>
       </span>
     </div>
   </div>
