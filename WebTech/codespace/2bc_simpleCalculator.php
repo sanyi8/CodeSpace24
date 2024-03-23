@@ -8,7 +8,7 @@
     $y = "";
     $result = "";
 
-    //assign the each to the right variable
+    //assign each to the right variable
     if(isset($_GET['operation'])){
         $x = $_GET['num1'];
         $y = $_GET['num2'];
