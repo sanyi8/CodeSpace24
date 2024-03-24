@@ -23,15 +23,13 @@ if ($age >= 1928 && $age <= 1945){
    
    // do something with the form data, such as storing it in a database or sending an email
    
-    echo "Thank you $name for submitting the form!" <br>;
+    echo "Thank you $name for submitting the form!";
     echo "You are part of $generation generation";
 } else {
     // the form wasn't submitted properly
     echo "There was an error submitting the form.";
 }
 ?>
-
-
 
 <!--HTML part-->
 
