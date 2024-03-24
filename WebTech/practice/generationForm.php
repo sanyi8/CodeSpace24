@@ -4,6 +4,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = $_POST['email'];
     $age = $_POST['age'];
 
+// Validate age
+if (empty($_POST["age"])) {
+    $age_error = "Year is required";
+} else {
+
 //Show generation based on age
 if ($age >= 1928 && $age <= 1945){
     $generation = "Silent Generation";
@@ -18,13 +23,15 @@ if ($age >= 1928 && $age <= 1945){
 } elseif ($age >= 2012 && $age <= 2025){
     $generation = "Gen Alpha";
 } else {
-    $generation = "Your generation not yet labeled"
+    $generation = "Your generation not yet labeled";
 }
    
    // do something with the form data, such as storing it in a database or sending an email
    
     echo "Thank you $name for submitting the form!";
     echo "You are part of $generation generation";
+}
+
 } else {
     // the form wasn't submitted properly
     echo "There was an error submitting the form.";
@@ -48,7 +55,7 @@ if ($age >= 1928 && $age <= 1945){
         <input type="email" name="email" id="email">
         <br><br>
         <label for="age">Year of Birth:</label>
-        <input type="number" name="age" id="age" min="1928">
+        <input type="number" name="age" id="age">
         <input type="submit" value="Submit">
     </form>
 </body>
